@@ -114,6 +114,3 @@ def selection_sort(data):
                 max_index = location
         data[fill_slot], data[max_index] = data[max_index], data[fill_slot]
     return data
-
-data = [19,12,3,1,3,10,-2]
-print(selection_sort(data))
