@@ -45,9 +45,6 @@ def draw_vector(v0, v1, ax=None):
 #     v = vector * 3 * np.sqrt(length)
 #     draw_vector(pca.mean_, pca.mean_ + v)
 # plt.axis('equal');
-
-
-
 # PCA for visualization 
 
 digits = load_digits()
