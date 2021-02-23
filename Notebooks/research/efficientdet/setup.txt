@@ -1,0 +1,25 @@
+Set up instruction for object detection
+
+So follow the instruction here to set up. Look below at the  comments before starting
+https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html
+(Some of the commands they provide might be linux commands instead of windows
+So in general use \ if / doesnt work and use the command copy instead of cp)
+
+If the computer doent have AVX support use the below version of TF2.2.0 as sadly 2.1.0 does not work
+https://github.com/fo40225/tensorflow-windows-wheel/tree/e7d932cf6fd1b85ff47d20fb8215561ea059d317/2.2.0/py38/CPU%2BGPU/cuda110cudnn8sse2
+IF you install this version also install CUDA 11.0 and the most recent version of cudnn 8 instead of what the above tutorial says.
+(IN the tutorial it says to add <INSTALL_PATH>\NVIDIA GPU Computing Toolkit\CUDA\v10.1\extras\CUPTI\libx64 to the path
+This is wrong it should actually be lib64 without the x. and what ever version of CUDA is installed.
+
+Finish tutorial instruction
+This will go through how to install the required packages
+And then will walk through how to set up the file system and label images, and how to setup config file
+Then how to train the model from an exisiting model
+
+On the Avian System: use env ObjectDetection2
+
+Export Model
+python .\exporter_main_v2.py --input_type image_tensor --pipeline_config_path .\models\my_efficientdet_d0\pipeline.config --trained_checkpoint_dir .\models\my_efficientdet_d0\ --output_directory .\exported-models\my_model
+
+Once model is exported i followed these instruction to use the exported model and create the visualizations
+https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/auto_examples/plot_object_detection_saved_model.html#sphx-glr-auto-examples-plot-object-detection-saved-model-py

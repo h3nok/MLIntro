@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>--engine=1 --model="C:\svn\ThirdParty\DeepNetModels\viNet_2.8_Goldwin_3_Class.Operational\viNet\viNet_2.8_Goldwind_2.3m.Operational.pb" --host=12.1.1.91 --user=hghebrechristos --database=viNet --password=blank --ir_model="C:\\git\\VisionAI\\viAI.Runtime\\models\\viNet_2.6_TOTW_16m.Operational.xml </LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>
