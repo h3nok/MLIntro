@@ -27,7 +27,7 @@ opt-einsum==3.3.0
 parso==0.7.0
 pickleshare==0.7.5
 prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1598885458782/work
-protobuf==3.13.0
+protobuf==3.15.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 Pygments @ file:///tmp/build/80754af9/pygments_1600458456400/work
